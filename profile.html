@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Professional Profiles Carousel</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <style>
+    body {
+      background-color: #1a202c;
+      font-family: serif;
+    }
+  </style>
+</head>
+<body class="text-yellow-400">
+
+  <header class="text-center py-8 border-b border-yellow-400">
+    <h1 class="text-4xl font-bold">Meet the Experts</h1>
+  </header>
+
+  <!-- Carousel Section -->
+  <section class="py-12">
+    <div class="swiper mySwiper max-w-7xl mx-auto px-4">
+      <div class="swiper-wrapper">
+
+        <!-- Profile 1 -->
+        <div class="swiper-slide bg-gray-800 p-8 rounded-xl shadow-md">
+          <div class="flex flex-col items-center text-center">
+            <img src="image/jissjose-Digital-marketing-expert.png" alt="Jiss Jose" class="rounded-full w-32 h-32 border-4 border-yellow-400 object-cover mb-4">
+            <h1 class="text-2xl font-bold mb-1 ">Jiss Jose</h1>
+            <p class="text-yellow-300 mb-4">Full Stack Developer & SEO Analyst</p>
+            <p class="text-yellow-200 mb-6 text-xl">
+              I’m <strong>Jiss Jose</strong>, a passionate Web Developer and SEO Expert based in Kochi, Kerala. With a background in B.Com and a strong interest in technology, I’ve built my career in creating modern, user-friendly websites and helping businesses grow online. As a freelance digital marketing expert, I specialize in web designing, web development, and search engine optimization (SEO). I combine creative design with technical skills to deliver results-driven solutions for clients looking to establish or improve their online presence.
+            </p>
+            <h2 class="text-xl font-semibold mb-2">Services</h2>
+            <ul class="text-yellow-200 text-xl mb-4">
+              <li>✓ Full Stack Web Developer</li>
+              <li>✓ Digital Marketing Expert</li>
+              <li>✓ SEO Analyst</li>
+            </ul>
+            <h2 class="text-xl font-semibold mb-2">Certifications</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <img src="image/google-certified-freelance-digital-marketer-in-kochi.webp" class="rounded shadow w-full h-28 object-contain" alt="Cert 1">
+              <img src="image/hubspot-certified-freelance-digital-marketer-in-kochi.webp" class="rounded shadow w-full h-28 object-contain" alt="Cert 2">
+              <img src="image/jissjose-sermrush-digital-marketing -certificate.png" class="rounded shadow w-full h-28 object-contain" alt="Cert 3">
+            </div>
+          </div>
+        </div>
+
+        <!-- Profile 2 -->
+        <div class="swiper-slide bg-gray-800 p-8 rounded-xl shadow-md">
+          <div class="flex flex-col items-center text-center">
+            <img src="image/sneha -digital marketing expert.png" alt="Sneha P Karunakaran" class="rounded-full w-32 h-32 border-4 border-green-400 object-cover mb-4">
+            <h1 class="text-2xl font-bold text-green-400 mb-1">Sneha P Karunakaran</h1>
+            <p class="text-green-300 mb-4">Data Scientist & Digital Marketing Expert</p>
+            <p class="text-green-200 mb-6 text-xl">
+              I’m <strong>Sneha P Karunakaran</strong>, a passionate Data Scientist and Digital Marketing Expert based in Kochi, Kerala. With a background in Business Administration (BBA), I bring a unique blend of analytical skills and business insight to the world of technology. My journey spans across web development, data-driven decision-making, and crafting effective digital marketing strategies that deliver measurable results. I thrive on solving complex problems with data and building user-friendly web solutions that help businesses grow in the digital space.
+            </p>
+            <h2 class="text-xl font-semibold text-green-400 mb-2">Services</h2>
+            <ul class="text-green-200 text-xl mb-4">
+              <li>✓ Digital Marketing Expert</li>
+              <li>✓ Web Developer</li>
+              <li>✓ Data Scientist</li>
+            </ul>
+            <h2 class="text-xl font-semibold text-green-400 mb-2">Certifications</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <img src="image/google-certified-freelance-digital-marketer-in-kochi.webp" class="rounded shadow w-full h-28 object-contain" alt="Cert 1">
+              <img src="image/semrush-certified-freelance-digiat-marketer-in-kochi.webp" class="rounded shadow w-full h-28 object-contain" alt="Cert 2">
+              <img src="image/hubspot-digital marketing certificat.png" class="rounded shadow w-full h-28 object-contain" alt="Cert 3">
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-pagination mt-6"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 border-t border-yellow-400">
+    <p class="text-yellow-400">© 2025 Profiles . All rights reserved betterfox.</p>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      slidesPerView: 1,
+      spaceBetween: 40,
+    });
+  </script>
+
+</body>
+</html>
